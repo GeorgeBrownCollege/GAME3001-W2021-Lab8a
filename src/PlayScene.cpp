@@ -106,15 +106,6 @@ void PlayScene::start()
 
 
 
-	// create a dummy DecisionTree
-	decisionTree = new DecisionTree();
-	decisionTree->setAgent(m_pShip);
-	decisionTree->Display();
-
-	std::cout << "------------------------" << std::endl;
-	std::cout << decisionTree->MakeDecision() << std::endl;
-	std::cout << "------------------------\n" << std::endl;
-
 }
 
 void PlayScene::GUI_Function() 
@@ -128,7 +119,7 @@ void PlayScene::GUI_Function()
 	// See examples by uncommenting the following - also look at imgui_demo.cpp in the IMGUI filter
 	//ImGui::ShowDemoWindow();
 	
-	ImGui::Begin("GAME3001 - Lab 7", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_MenuBar);
+	ImGui::Begin("GAME3001 - Lab 8", nullptr, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_MenuBar);
 
 	// allow ship rotation
 	static int angle;
@@ -145,9 +136,7 @@ void PlayScene::GUI_Function()
 		m_pShip->getTransform()->position.x = shipPosition[0];
 		m_pShip->getTransform()->position.y = shipPosition[1];
 
-		std::cout << "------------------------" << std::endl;
-		std::cout << decisionTree->MakeDecision() << std::endl;
-		std::cout << "------------------------\n" << std::endl;
+		
 	}
 	
 	static int targetPosition[] = { m_pTarget->getTransform()->position.x, m_pTarget->getTransform()->position.y };
