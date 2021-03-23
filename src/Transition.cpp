@@ -6,6 +6,9 @@ Transition::Transition(Condition* condition, State* target_state)
 	SetCondition(condition);
 }
 
+Transition::~Transition()
+= default;
+
 Condition* Transition::GetCondition() const
 {
 	return m_condition;
@@ -16,8 +19,6 @@ void Transition::SetCondition(Condition* condition)
 	m_condition = condition;
 }
 
-Transition::~Transition()
-= default;
 
 bool Transition::IsTriggered() const
 {

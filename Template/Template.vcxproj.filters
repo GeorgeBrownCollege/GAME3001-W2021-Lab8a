@@ -231,6 +231,9 @@
     <ClCompile Include="..\src\MoveToPlayer.cpp">
       <Filter>StateMachine\Actions</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\StateMachine.cpp">
+      <Filter>StateMachine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\StartScene.h">
@@ -460,6 +463,9 @@
     </ClInclude>
     <ClInclude Include="..\src\MoveToPlayer.h">
       <Filter>StateMachine\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StateMachine.h">
+      <Filter>StateMachine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

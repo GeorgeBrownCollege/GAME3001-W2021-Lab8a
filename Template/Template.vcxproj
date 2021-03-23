@@ -186,6 +186,7 @@
     <ClCompile Include="..\src\SpaceShip.cpp" />
     <ClCompile Include="..\src\Sprite.cpp" />
     <ClCompile Include="..\src\State.cpp" />
+    <ClCompile Include="..\src\StateMachine.cpp" />
     <ClCompile Include="..\src\Tile.cpp" />
     <ClCompile Include="..\src\Transition.cpp" />
     <ClCompile Include="..\src\UIControl.cpp" />
@@ -253,6 +254,7 @@
     <ClInclude Include="..\src\SpaceShip.h" />
     <ClInclude Include="..\src\Sprite.h" />
     <ClInclude Include="..\src\State.h" />
+    <ClInclude Include="..\src\StateMachine.h" />
     <ClInclude Include="..\src\Tile.h" />
     <ClInclude Include="..\src\TileStatus.h" />
     <ClInclude Include="..\src\Transition.h" />
